@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Fullstack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="background-orbit"></div>
+    <header class="site-header" data-animate="fade-up">
+      <!-- SECTION: Header -->
+      <div class="container header-inner">
+        <div class="logo-mark">EP</div>
+        <nav class="main-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="#hero" data-i18n="nav.hero"></a></li>
+            <li><a href="#about" data-i18n="nav.about"></a></li>
+            <li><a href="#projects" data-i18n="nav.projects"></a></li>
+            <li><a href="#skills" data-i18n="nav.skills"></a></li>
+            <li><a href="#playground" data-i18n="nav.playground"></a></li>
+            <li><a href="#contact" data-i18n="nav.contact"></a></li>
+          </ul>
+        </nav>
+        <div class="lang-toggle" aria-label="Language selector">
+          <button class="lang-btn is-active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION: Hero -->
+      <section id="hero" class="section hero" data-animate="fade-up">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+            <h1 class="hero-title">Etienne POURCHON</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn primary" data-i18n="hero.ctaPrimary"></a>
+              <a href="#playground" class="btn ghost" data-i18n="hero.ctaSecondary"></a>
+            </div>
+            <div class="hero-meta" data-i18n="hero.meta"></div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-orbit-card" data-animate="float">
+              <div class="hero-status-pill" data-i18n="hero.status"></div>
+              <div class="hero-code-preview">
+                <span class="code-line">const dev = {</span>
+                <span class="code-line">&nbsp;&nbsp;role: "Fullstack Developer",</span>
+                <span class="code-line">&nbsp;&nbsp;focus: "micro-interactions",</span>
+                <span class="code-line">&nbsp;&nbsp;stack: ["HTML", "CSS", "JS"],</span>
+                <span class="code-line">};</span>
+              </div>
+              <button class="btn tiny" id="heroPulseBtn" type="button" data-i18n="hero.microCta"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: About -->
+      <section id="about" class="section" data-animate="fade-up">
+        <div class="container section-header">
+          <h2 data-i18n="about.title"></h2>
+          <p class="section-kicker" data-i18n="about.kicker"></p>
+        </div>
+        <div class="container about-grid">
+          <article class="card about-card">
+            <h3 data-i18n="about.whoTitle"></h3>
+            <p data-i18n="about.whoBody"></p>
+          </article>
+          <article class="card about-card">
+            <h3 data-i18n="about.howTitle"></h3>
+            <p data-i18n="about.howBody"></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION: Projects -->
+      <section id="projects" class="section" data-animate="fade-up">
+          <div class="flicker"></div>
+
+          <div class="band top">
+            <div class="band-inner">
+              <div class="ticker">
+                <span class="tick">⚠ ATTENTION ⚠</span>
+                <span class="tick" data-i18n="border.text.1"></span>
+                <span class="tick">⚠ ATTENTION ⚠</span>
+                <span class="tick" data-i18n="border.text.2"></span>
+                <span class="tick">⚠ ATTENTION ⚠</span>
+                <span class="tick" data-i18n="border.text.3"></span>
+                <span class="tick">⚠ ATTENTION ⚠</span>
+                <span class="tick" data-i18n="border.text.4"></span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="band bottom">
+            <div class="band-inner">
+              <div class="ticker">
+                <span class="tick">⚠ ATTENTION ⚠</span>
+                <span class="tick" data-i18n="border.text.1"></span>
+                <span class="tick">⚠ ATTENTION ⚠</span>
+                <span class="tick" data-i18n="border.text.2"></span>
+                <span class="tick">⚠ ATTENTION ⚠</span>
+                <span class="tick" data-i18n="border.text.3"></span>
+                <span class="tick">⚠ ATTENTION ⚠</span>
+                <span class="tick" data-i18n="border.text.4"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          <div class="label" data-text="PLACEHOLDER">PLACEHOLDER</div>
+          <div class="sub" data-i18n="border.maintext"></div>
+        </div>
+        <div class="container section-header">
+          <h2 data-i18n="projects.title"></h2>
+          <p class="section-kicker" data-i18n="projects.kicker"></p>
+        </div>
+        <div class="container projects-grid">
+          <article class="card project-card" data-project="1">
+            <div class="pill" data-i18n="projects.items.0.tag"></div>
+            <h3 data-i18n="projects.items.0.title"></h3>
+            <p data-i18n="projects.items.0.body"></p>
+            <p class="project-tech" data-i18n="projects.items.0.tech"></p>
+          </article>
+          <article class="card project-card" data-project="2">
+            <div class="pill" data-i18n="projects.items.1.tag"></div>
+            <h3 data-i18n="projects.items.1.title"></h3>
+            <p data-i18n="projects.items.1.body"></p>
+            <p class="project-tech" data-i18n="projects.items.1.tech"></p>
+          </article>
+          <article class="card project-card" data-project="3">
+            <div class="pill" data-i18n="projects.items.2.tag"></div>
+            <h3 data-i18n="projects.items.2.title"></h3>
+            <p data-i18n="projects.items.2.body"></p>
+            <p class="project-tech" data-i18n="projects.items.2.tech"></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION: Skills -->
+      <section id="skills" class="section" data-animate="fade-up">
+        <div class="container section-header">
+          <h2 data-i18n="skills.title"></h2>
+          <p class="section-kicker" data-i18n="skills.kicker"></p>
+        </div>
+        <div class="container skills-grid">
+          <div class="skill-column">
+            <h3 data-i18n="skills.allTitle"></h3>
+            <ul class="chip-list">
+              <li class="chip">HTML5</li>
+              <li class="chip">CSS3</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">JAVA</li>
+              <li class="chip">SQL</li>
+              <li class="chip">PHP</li>
+            </ul>
+          </div>
+          <div class="skill-column">
+            <h3 data-i18n="skills.toolsTitle"></h3>
+            <ul class="chip-list">
+              <li class="chip">Git</li>
+              <li class="chip">VS Code</li>
+              <li class="chip">XAMP</li>
+            </ul>
+          </div>
+          <div class="skill-column">
+            <h3 data-i18n="skills.softTitle"></h3>
+            <ul class="chip-list">
+              <li class="chip" data-i18n="skills.soft.0"></li>
+              <li class="chip" data-i18n="skills.soft.1"></li>
+              <li class="chip" data-i18n="skills.soft.2"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Playground & Services -->
+      <section id="playground" class="section" data-animate="fade-up">
+        <div class="container section-header">
+          <h2 data-i18n="playground.title"></h2>
+          <p class="section-kicker" data-i18n="playground.kicker"></p>
+        </div>
+        <div class="container playground-grid">
+          <!-- Sandbox / Micro game -->
+          <div class="card sandbox-card">
+            <div class="sandbox-header">
+              <h3 data-i18n="playground.sandboxTitle"></h3>
+              <button type="button" class="btn tiny" id="sandboxResetBtn" data-i18n="playground.reset"></button>
+            </div>
+            <p class="sandbox-instructions" data-i18n="playground.instructions"></p>
+            <div class="sandbox-area" id="sandboxArea" aria-label="Interaction playground">
+              <button type="button" class="orbit-target" id="orbitTarget">Tap me</button>
+              <div class="orbit-score" id="orbitScore" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <!-- Services list -->
+          <div class="card services-card">
+            <h3 data-i18n="services.title"></h3>
+            <p data-i18n="services.intro"></p>
+            <ul class="services-list">
+              <li>
+                <h4 data-i18n="services.items.0.title"></h4>
+                <p data-i18n="services.items.0.body"></p>
+              </li>
+              <li>
+                <h4 data-i18n="services.items.1.title"></h4>
+                <p data-i18n="services.items.1.body"></p>
+              </li>
+              <li>
+                <h4 data-i18n="services.items.2.title"></h4>
+                <p data-i18n="services.items.2.body"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Contact -->
+      <section id="contact" class="section" data-animate="fade-up">
+        <div class="container section-header">
+          <h2 data-i18n="contact.title"></h2>
+          <p class="section-kicker" data-i18n="contact.kicker"></p>
+        </div>
+        <div class="container contact-grid">
+          <form class="card contact-form" autocomplete="off">
+            <div class="form-field">
+              <label for="name" data-i18n="contact.form.nameLabel"></label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-field">
+              <label for="email" data-i18n="contact.form.emailLabel"></label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-field">
+              <label for="message" data-i18n="contact.form.messageLabel"></label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn primary" data-i18n="contact.form.submit"></button>
+            <p class="form-hint" data-i18n="contact.form.hint"></p>
+          </form>
+          <aside class="card contact-aside">
+            <h3 data-i18n="contact.asideTitle"></h3>
+            <p data-i18n="contact.asideBody"></p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a href="mailto:etienne.pourchon@gmail.com" class="contact-link">etienne.pourchon@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/EtiennePourchon" class="contact-link">github.com/EtiennePourchon</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/etienne-pourchon-543253266/" class="contact-link">linkedin.com/in/etienne-pourchon-543253266</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-animate="fade-up">
+      <div class="container footer-inner">
+        <p data-i18n="footer.copy"></p>
+        <p class="footer-mini" data-i18n="footer.made"></p>
+      </div>
+    </footer>
+  </body>
+</html>
