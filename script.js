@@ -13,6 +13,7 @@ const translations = {
 	  "hero.eyebrow": "Hello, I'm",
 	  "hero.subtitle":
 		"I'm a Junior Fullstack developer, from frontend interactions to backend APIs, I can build complete web solutions, working with modern stacks to deliver apps that are scalable, maintainable, and ready for users.",
+	  "hero.cv": "My CV",
 	  "hero.ctaPrimary": "View projects",
 	  "hero.ctaSecondary": "Try the playground",
 	  "hero.meta": "Quick. Fluid. Interactive. Everything on this page is wired with motion.",
@@ -109,6 +110,7 @@ const translations = {
 	  "hero.eyebrow": "Bonjour, je suis",
 	  "hero.subtitle":
 		"Je suis un développeur Fullstack junior ; des interactions frontend aux API backend, je peux créer des solutions web complètes, en utilisant des technologies modernes pour fournir des applications évolutives, maintenables et prêtes à l’emploi.",
+	  "hero.cv": "Mon CV",
 	  "hero.ctaPrimary": "Voir les projets",
 	  "hero.ctaSecondary": "Tester le playground",
 	  "hero.meta":
